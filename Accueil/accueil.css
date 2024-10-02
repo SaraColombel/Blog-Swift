@@ -1,0 +1,341 @@
+@font-face{
+    font-family: Candlefish;
+    src: url('/taylorSwitch/font/CandleFish/Candlefish.ttf');
+}
+@font-face{
+    font-family: Roboto_Light;
+    src: url('/taylorSwitch/font/Roboto/Roboto-Light.ttf')
+}
+.title-slide4, .title, .title-album, .titre-date-accueil{
+    font-family: Candlefish;
+}
+p, a, .bouton, .nom-social, .bouton-contact{
+    font-family: Roboto_Light;
+}
+
+html,
+body,
+section {
+    block-size: 100%;
+}
+html {
+    scroll-snap-type: y mandatory;
+}
+section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+section:nth-of-type(even) {
+    color: rgb(255, 255, 255);
+    background: #202020;
+}
+section:nth-of-type(odd) {
+    color: black;
+    background: #ffd8ff;
+}
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    font-size: 4rem;
+}
+
+#navbar{
+    background: #202020;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 11vh;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 5;
+}
+#navbar #nav-onglets li{
+    list-style-type: none;
+    text-align: center;
+    display: inline-block;
+    justify-content: space-between;
+}
+#navbar #nav-onglets li a {
+    color: white;
+    font-size: 18px;
+    display: block;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    padding: 6px;
+    margin: 0 6px;
+}
+#navbar #nav-onglets li a:hover{
+    background:#f0c1c9ec;
+    padding: 6px;
+    border-radius:5px;
+}
+.logo {
+    display: flex;
+    margin-left: 20px;
+}
+.logo img {
+    width: auto;
+    height: 80px;
+}
+#menuNavbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1em;
+    margin-top: -60px;
+    margin-left: 70px;
+}
+#cache{
+    opacity: 0%;
+}
+#cache:hover{
+    opacity: 100%;
+}
+.d-flex{
+    padding-bottom: 16px;
+}
+.navbar-customize {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: #333;
+    color: white;
+    z-index: 1000;
+}
+.onglets{
+    list-style-type: none;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 17px;
+}
+ul .onglets-x{
+    margin-right: 60px;
+}
+
+.image-slide1{
+    width: 400px;
+    margin-top: 170px;
+    border-radius: 2%;
+    box-shadow: 3px 10px 10px 2px rgba(136, 0, 106, 0.219);
+    transition-property: width;
+    transition-duration: 0.4s;
+}
+.image-slide1:hover{
+    width: 405px;
+}
+
+.title{
+    margin-top: 170px;
+    margin-left: 45px;
+    transition-property: left;
+    transition-duration: 2s;
+}
+
+.title:hover{
+    left:182px;opacity:1; 
+}
+
+.paragraphe-slide1{
+    margin-left: 45px;
+    max-width: 600px;
+    font-size: 19px;
+}
+
+.album-cover-accueil{
+    width: 230px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    transition-property: width border-radius box-shadow margin-right translateX;
+    transition-duration: 0.5s;
+    border-radius: 7%;
+    z-index: 3;
+    position: absolute;
+}
+
+.album-cover-accueil:hover + .vinyle{
+    margin-left: 55px;
+    transform: rotate(1turn);
+}
+
+.album-cover-accueil:hover{
+
+    border-radius: 5%;
+    transform: translateX(-70px);
+}
+
+.vinyle{
+    position: relative;
+    z-index: 2;
+    width: 230px;
+    top: 150px;
+    margin-left: -5px;
+    transition-property: margin-left transform;
+    transition-duration: 1s;
+    margin-bottom: 160px;
+}
+
+.title-album{
+    margin-bottom: 30px;
+}
+
+.album-titre-accueil{
+    margin-bottom: 50px;
+    font-size: 20px;
+    margin-left: 50px;
+    font-weight: 600;
+}
+.paragraphe-album{
+    max-width: 1000px;
+    font-size: 19px;
+}
+
+#album-cover1{
+    color: rgb(255, 207, 163);
+}
+#album-cover3{
+    color: rgb(255, 197, 236);
+}
+#album-cover2{
+    color: rgb(176, 223, 255);
+}
+
+iframe{
+    display: block;
+    margin: auto;
+    margin-top: 90px;
+    margin-bottom: 30px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(224, 175, 224);
+}
+
+.titre-date-accueil{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.date, .ville, .lieu{
+    text-align: center;
+    transition-property: background-color;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 500 ;
+}
+
+.date{
+    margin-left: 150px;
+}
+.lieu{
+    margin-left: 0px;
+}
+
+
+.information-button{
+    width: 70px;
+}
+
+.image-slide4{
+    width: 300px;
+    margin-top: 150px;
+    margin-left: 50px;
+    border-radius: 2%;
+    box-shadow: -3px 10px 25px 2px rgba(99, 0, 77, 0.219);
+}
+.title-slide4{
+    margin-top: 140px;
+}
+.paragraphe-slide4{
+    max-width: 700px;
+}
+.contact-button{
+    margin-top: 18px;
+}
+
+.logo-instagram, .logo-youtube, .logo-x{
+    width: 200px;
+    margin-top: 50px;
+    margin-left: 75px;
+    transition-property: background-color border-radius;
+    transition-duration: 0.3s;
+}
+
+.logo-instagram:hover{
+    border-radius: 10%;
+    background-color: #333333;
+}
+.logo-youtube:hover{
+    border-radius: 10%;
+    background-color: #333333;
+}
+.logo-x:hover{
+    border-radius: 10%;
+    background-color: #333333;
+}
+
+.nom-social{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+.bouton{
+    background: linear-gradient(90deg, rgba(253, 241, 255, 0.6) -10%, rgb(255, 114, 180) 50%);
+    width: 120px;
+    height: 35px;
+    border-radius: 20px;
+    border-color: rgb(32, 32, 32);
+    border-style: solid;
+    font-weight:600;
+    font-size: 20px;
+    color: #242424;
+}
+
+.bouton-contact{
+    background: linear-gradient(90deg, rgba(253, 241, 255, 0.6) -10%, rgb(255, 114, 180) 50%);
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border-color: rgb(231, 173, 231);
+    border-style: solid;
+    font-weight:600;
+    font-size: 15px;
+    color: #242424;
+}
+
+/*Footer Floryanne*/
+
+footer ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+footer li{
+    margin-left: 2vw;
+}
+
+footer p{
+font-size: x-small;
+padding-bottom:0.5vh ;
+color: rgb(131, 131, 131);
+text-align: center;
+margin-left: 30px;
+}
+
+footer a{
+    color: rgb(131, 131, 131);
+}
+footer a:hover{
+    color: #e4a2ce;
+}
+.push {
+    display: absolute;
+    bottom: 0;
+}

@@ -1,0 +1,312 @@
+/* Police d'écriture */
+@font-face{
+    font-family: Candlefish;
+    src: url('/taylorSwitch/font/CandleFish/Candlefish.ttf');
+}
+@font-face{
+    font-family: Roboto_Light;
+    src: url('/taylorSwitch/font/Roboto/Roboto-Light.ttf')
+}
+h2{
+    font-family: Candlefish;
+}
+p, a{
+    font-family: Roboto_Light;
+}
+
+
+
+html,body{
+    margin: 0;
+    padding:0;
+}
+#navbar{
+    background: #202020;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 11vh;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 5;
+}
+#navbar #nav-onglets li{
+    list-style-type: none;
+    text-align: center;
+    display: inline-block;
+    justify-content: space-between;
+}
+#navbar #nav-onglets li a {
+    color: white;
+    font-size: 18px;
+    display: block;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    padding: 6px;
+    margin: 0 6px;
+}
+
+#navbar #nav-onglets li a:hover{
+    background:#f0c1c9ec;
+    padding: 6px;
+    border-radius:5px;
+}
+.logo {
+    display: flex;
+    margin-left: 20px;
+}
+.logo img {
+    width: auto;
+    height: 80px;
+}
+#menuNavbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1em;
+    margin-top: -60px;
+    margin-left: 70px;
+}
+#cache{
+    opacity: 0%;
+}
+#cache:hover{
+    opacity: 100%;
+}
+.d-flex{
+    padding-bottom: 16px;
+}
+.btn-outline-success{
+    color: #ffffff;
+    background-color: transparent;
+    background-image: none;
+    border-color: #3f28a7;
+}
+
+
+
+
+/* Biographie Jeunesse */
+.bio-jeunesse{
+    margin-top: 90px;
+    background-color: #ffd8ff;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+.jeune-swift{
+    float: left;
+    margin-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.texte-jeunesse{
+    margin-left: 20px;
+    max-width: 600px;
+    padding-top: 30px;
+    font-size: 18px;
+}
+
+
+
+.pink-to-grey{
+    background: linear-gradient(#ffd8ff, #202020 20%);
+    padding-bottom: 50px;
+}
+.text-pink-to-grey{
+    color: #202020;
+}
+
+
+/* Biographie Ses Débuts */
+.bio-debuts{
+    background-color: #202020;
+    color: rgb(255, 248, 248);
+    height: 500px;
+}
+.debuts-swift{
+    float: right;
+    padding-bottom: 50px;
+    margin-top: 10px;
+    margin-right: 400px;
+    width: 20%;
+}
+.texte-debuts{
+    padding-bottom: 50px;
+    max-width: 600px;
+    margin-left: 480px;
+    font-size: 18px;
+}
+
+
+.grey-to-pink{
+    background: linear-gradient(#202020, #ffd8ff 20%);
+    padding-bottom: 10px;
+}
+.text-grey-to-pink{
+    color: #ffd8ff;
+}
+
+
+/* Biographie Awards */
+.bio-awards{
+    background-color: #ffd8ff;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+.awards-swift{
+    float: left;
+    margin-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.texte-awards{
+    margin-left: 20px;
+    max-width: 600px;
+    padding-top: 30px;
+    font-size: 18px;
+}
+
+
+.degraded-pink{
+    background: linear-gradient(#ffd8ff 50%, white);
+    padding: 5px;
+}
+.text-degarded-pink{
+    color: #ffd8ff;
+}
+
+
+/* Discographie */
+.album-cover-disco{
+    width: 200px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    transition-property: width border-radius box-shadow margin-right translateX;
+    transition-duration: 0.5s;
+    border-radius: 7%;
+    z-index: 3;
+    position: absolute;
+}
+.album-cover-disco:hover + .vinyle{
+    margin-left: 85px;
+    transform: rotate(1turn);
+}
+.album-cover-disco:hover{
+
+    border-radius: 5%;
+    transform: translateX(-20px);
+}
+.vinyle{
+    position: relative;
+    z-index: 2;
+    width: 200px;
+    top: 30px;
+    margin-left: -5px;
+    transition-property: margin-left transform;
+    transition-duration: 1s;
+    margin-bottom: 40px;
+}
+.title-album{
+    margin-bottom: 30px;
+}
+.album-titre-disco{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.description-album{
+    font-size: 18px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: aliceblue;
+}
+#titre-album-cover1{
+    color: rgb(176, 223, 255);
+    text-align: center;
+}
+#titre-album-cover3{
+    color: rgb(184, 143, 109);
+    text-align: center;
+}
+#titre-album-cover2{
+    color: rgb(180, 158, 141);
+    text-align: center;
+}
+#titre-album-cover4{
+    color: rgb(202, 202, 202);
+    text-align: center;
+}
+#titre-album-cover5{
+    color: #a4b8da;
+    text-align: center;
+}
+#titre-album-cover6{
+    color: #d49bc8;
+    text-align: center;
+}
+#titre-album-cover7{
+    color: #cec9b6;
+    text-align: center;
+}
+#titre-album-cover8{
+    color: #c2c2c2;
+    text-align: center;
+}
+#titre-album-cover9{
+    color: #fcd7ff;
+    text-align: center;
+}
+.album-cover{
+    text-align: center;
+    background-color: #000000be;
+    border-radius: 5%;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.titre-discographie{
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 30px;
+    font-size: 50px;
+    color: white ;
+}
+#discographie{
+    background-image: url("/taylorSwitch/img/bg-discographie.png");
+    background-size: 3000px;
+}
+
+
+/* Footer */
+footer ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin-right: 50px;
+}
+footer li{
+    margin-left: 2vw;
+}
+footer p{
+font-size: x-small;
+padding-bottom:0.5vh ;
+color: rgb(131, 131, 131);
+text-align: center;
+margin-left: 30px;
+}
+footer a{
+    color: rgb(131, 131, 131);
+}
+footer a:hover{
+    color: rgb(228, 162, 206);
+}
+.push {
+    display: absolute;
+    bottom: 0;
+    background-color: rgb(32, 32, 32);
+}
